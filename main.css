@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 16px;
+    background-color: #89375F;
+    margin-bottom: 34px;
+    color: #F3E8FF;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+header li {
+    list-style: none;
+}
+
+header li a {
+    list-style: none;
+    color: #FFF9C9;
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+    
+}
+
+.titulo {
+    border-bottom: 2px solid;
+}
+.sobre {
+    display: flex;
+    padding:16px;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+.sobre img {
+    margin-right: 16px;
+    width: 400px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+    background-color: #F8FAE5;
+    margin: 16px 0 0 0;
+}
+
+.produtos img {
+    width: 100%;
+}
+
+.produtos .produto {
+    margin: 30px;
+
+}
+
+.produtos button {
+    margin: 2px 0 2px 0;
+    width: 100%;
+    padding: 5px;
+    background-color: #89375F;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.texto {
+    padding: 8px 0 8px 0;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 90%;
+    }
+    
+    header {
+        padding: 16px;
+        background-color: #89375F;
+        margin-bottom: 34px;
+        color: #F3E8FF;
+        }
+    
+    .sobre {
+        display: block;
+    }
+    
+    .produtos {
+        display: block;
+        flex-direction: column; 
+        padding: 20px 0 100px 0;
+
+    }
+    
+    .produtos img {
+        width: 100%;
+    }
+    
+    .produtos .produto {
+        margin: 10px;
+
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+    
+    header {
+        padding: 16px;
+        background-color: #89375F;
+        margin-bottom: 34px;
+        color: #F3E8FF;
+        }
+    
+    .sobre {
+        display: block;
+    }
+    
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 1%;
+    }
+    
+    .produtos img {
+        width: 100%;
+    }
+    
+    .produtos .produto {
+        margin: 10px;
+    }
+}
