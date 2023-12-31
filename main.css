@@ -42,6 +42,7 @@ header li a {
 .titulo {
     border-bottom: 2px solid;
 }
+
 .sobre {
     display: flex;
     padding:16px;
